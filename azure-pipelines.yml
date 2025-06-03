@@ -11,3 +11,6 @@ steps:
     goals: 'clean install'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
+
+- publish: 'target/*.jar'     # Path to your built artifact
+  artifact: 'drop'            # Artifact name
